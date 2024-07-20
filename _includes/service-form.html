@@ -1,4 +1,4 @@
-<form action="/submit" method="post">
+<form action="/thank-you.html" method="post">
   <label for="name">Name:</label>
   <input type="text" id="name" name="name" required />
 
@@ -8,7 +8,7 @@
   <label for="service">Service:</label>
   <select id="service" name="service">
     {% for service in site.data.services %}
-    <option value="{{ service.title }}">{{ service.title }}</option>
+    <option value="{{ service.name }}">{{ service.name }}</option>
     {% endfor %}
   </select>
 

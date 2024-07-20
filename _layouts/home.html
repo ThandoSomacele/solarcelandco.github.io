@@ -4,54 +4,43 @@ title: Solarcel and Co. - Sustainable Energy Solutions
 ---
 
 <section class="hero">
-    <div class="container">
-        <h1>Empowering Africa with Sustainable Energy Solutions</h1>
-        <p>Residential | Commercial | Government</p>
-        <a href="#" class="btn btn-primary">Get a Free Consultation</a>
-    </div>
+  <div class="container">
+    <h1>Empowering Africa with Sustainable Energy Solutions</h1>
+    <p>Residential | Commercial | Government</p>
+    <a href="#" class="btn btn-primary">Get a Free Consultation</a>
+  </div>
 </section>
 
 <section class="services">
-    <div class="container">
-        <h2>Our Services</h2>
-        <div class="service-grid">
-            {% for service in site.data.services %}
-            <div class="service-card">
-                <img src="{{ service.icon | relative_url }}" alt="{{ service.name }}">
-                <h3>{{ service.name }}</h3>
-                <p>{{ service.description }}</p>
-                <a href="{{ service.url }}" class="btn btn-secondary">Learn More</a>
-            </div>
-            {% endfor %}
-        </div>
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      {% for service in site.data.services %}
+      <div class="service-card">
+        <img src="{{ service.icon | relative_url }}" alt="{{ service.name }}" />
+        <h3>{{ service.name }}</h3>
+        <p>{{ service.description }}</p>
+        <a href="{{ service.url }}" class="btn btn-secondary">Learn More</a>
+      </div>
+      {% endfor %}
     </div>
+  </div>
 </section>
 
 <section class="featured-projects">
-    <div class="container">
-        <h2>Featured Projects</h2>
-        <!-- Add featured projects here -->
-    </div>
+  <div class="container">
+    <h2>Featured Projects</h2>
+    <!-- Add featured projects here -->
+  </div>
 </section>
 
 {% include review-carousel.html %}
 
 <section class="cta">
-    <div class="container">
-        <h2>Ready to Start Your Sustainable Energy Journey?</h2>
-        <a href="/contact" class="btn btn-primary">Contact Us Today</a>
-    </div>
+  <div class="container">
+    <h2>Ready to Start Your Sustainable Energy Journey?</h2>
+    <a href="/contact" class="btn btn-primary">Contact Us Today</a>
+  </div>
 </section>
 
-<section class="certifications">
-    <div class="container">
-        <h2>Our Certifications</h2>
-        <div class="certification-logos">
-            <img src="{{ '/assets/images/certification-logos/pv-greencard.png' | relative_url }}" alt="PV GreenCard">
-            <img src="{{ '/assets/images/certification-logos/sapvia.png' | relative_url }}" alt="SAPVIA">
-            <img src="{{ '/assets/images/certification-logos/ecasa.png' | relative_url }}" alt="ECASA">
-            <img src="{{ '/assets/images/certification-logos/ises.png' | relative_url }}" alt="ISES">
-            <img src="{{ '/assets/images/certification-logos/zasea.png' | relative_url }}" alt="ZASEA">
-        </div>
-    </div>
-</section>
+{% include footer.html %}

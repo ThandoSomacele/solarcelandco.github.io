@@ -1,0 +1,44 @@
+// _components.scss
+
+.btn {
+  display: inline-block;
+  padding: $spacing-unit $spacing-unit * 1.5;
+  color: #fff;
+  background-color: $primary-color;
+  border-radius: 0.25rem;
+  transition: background-color $transition-duration ease-in-out;
+
+  &:hover {
+    background-color: darken($primary-color, 15%);
+  }
+
+  &-primary {
+    background-color: $primary-color;
+  }
+
+  &-secondary {
+    background-color: $secondary-color;
+  }
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.25rem;
+  padding: $spacing-unit;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow $transition-duration ease-in-out;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  img {
+    max-width: 100%;
+    border-bottom: 1px solid #e1e1e1;
+  }
+
+  .card-content {
+    padding: $spacing-unit;
+  }
+}
