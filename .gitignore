@@ -1,0 +1,40 @@
+# Standard Jekyll files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Node modules (if using npm)
+node_modules/
+
+# Dependencies
+/vendor/bundle
+/vendor/cache
+/vendor/installs
+/vendor/ruby
+
+# GitHub Pages
+/.jekyll-cache/
+/_site/
+/vendor/
+
+# Sass cache
+.sass-cache
+
+# Temporary files
+*.tmp
+*.tempnode_modules/
+node_modules/
