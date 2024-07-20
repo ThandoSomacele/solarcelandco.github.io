@@ -1,0 +1,13 @@
+<div class="carousel">
+  {% for review in site.data.reviews %}
+  <div class="carousel-item">
+    <p>"{{ review.text }}"</p>
+    <p>- {{ review.author }}</p>
+    <div class="stars">
+      {% for i in (1..review.rating) %}
+      <span>&#9733;</span>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

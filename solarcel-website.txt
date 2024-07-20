@@ -1,0 +1,88 @@
+# Solarcel and Co. Website
+
+## Project Structure
+
+```
+solarcel-website/
+├── _config.yml
+├── _data/
+│   └── services.yml
+├── _includes/
+│   ├── head.html
+│   ├── header.html
+│   ├── footer.html
+│   ├── review-carousel.html
+│   └── service-form.html
+├── _layouts/
+│   ├── default.html
+│   ├── home.html
+│   └── service.html
+├── _sass/
+│   ├── _variables.scss
+│   ├── _base.scss
+│   ├── _layout.scss
+│   ├── _components.scss
+│   └── main.scss
+├── assets/
+│   ├── css/
+│   │   └── main.scss
+│   ├── js/
+│   │   └── main.js
+│   └── images/
+│       ├── logo.svg
+│       ├── hero-image.jpg
+│       └── certification-logos/
+│           ├── pv-greencard.png
+│           ├── sapvia.png
+│           ├── ecasa.png
+│           ├── ises.png
+│           └── zasea.png
+├── _services/
+│   ├── inverter-installation.md
+│   ├── inverter-battery-repairs.md
+│   ├── solar-panel-installation.md
+│   ├── solar-panel-replacement.md
+│   └── energy-audits.md
+├── index.html
+├── about.html
+├── services.html
+├── projects.html
+├── contact.html
+└── 404.html
+```
+
+## Setup Instructions
+
+1. Install Jekyll and its dependencies.
+2. Create the project structure as shown above.
+3. Set up `_config.yml` with your site's information.
+4. Create the necessary layouts, includes, and SASS files.
+5. Implement the pages using Markdown and HTML.
+6. Style your site using SASS.
+7. Test locally using `bundle exec jekyll serve`.
+
+## Color System
+
+Primary Color: #1E88E5 (Blue)
+Secondary Color: #FFA000 (Amber)
+
+Use these colors and their variations in your SASS variables.
+
+## Hosting on GitHub Pages
+
+1. Create a new repository on GitHub named `solarcelandco.github.io`.
+2. Push your Jekyll site to this repository.
+3. In the repository settings, enable GitHub Pages and set the source to the main branch.
+4. Add a CNAME file to your repository with the content: `solarcelandco.co.za`.
+5. Set up your domain's DNS:
+   - Add an A record pointing to GitHub's IP addresses:
+     185.199.108.153
+     185.199.109.153
+     185.199.110.153
+     185.199.111.153
+   - Add a CNAME record for www pointing to `solarcelandco.github.io`.
+
+6. In your GitHub repository settings, under "Pages", add your custom domain: `solarcelandco.co.za`.
+
+Your site should now be accessible at `https://solarcelandco.co.za`.
+

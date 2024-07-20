@@ -1,0 +1,29 @@
+---
+layout: service
+title: Solar Panel Installation
+icon: /assets/images/icons/solar-panel.svg
+---
+
+# Solar Panel Installation
+
+Our expert team provides top-notch solar panel installation services for residential, commercial, and government properties. We use the latest technology and highest quality panels to ensure maximum efficiency and longevity.
+
+## Benefits of Our Solar Panel Installation:
+
+- Reduce your electricity bills
+- Increase your property value
+- Contribute to a cleaner environment
+- Enjoy energy independence
+
+## Our Process:
+
+1. Initial consultation and site assessment
+2. Custom system design
+3. Obtaining necessary permits
+4. Professional installation
+5. System testing and commissioning
+6. Ongoing support and maintenance
+
+Contact us today for a free quote and start your journey towards sustainable energy!
+
+{% include service-form.html %}
